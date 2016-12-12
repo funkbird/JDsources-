@@ -1,0 +1,185 @@
+/*商品部分*/
+.shop .shop-left {
+    width: 730px;
+    height: 454px;
+    margin-top: 12px;
+    margin-left: 220px;
+    float: left;
+    position: relative;
+}
+.shop .shop-left:hover .arrow {
+    display: block;
+}
+.shop .shop-right {
+    height: 454px;
+    width: 250px;
+    float: right;
+    margin-top: 12px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 100%;
+    display: none;
+    height: 0;
+}
+.arrow .arrow-left,.arrow .arrow-right {
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    background-color: rgba(0,0,0,.2);
+    color: #ffffff;
+    font-family: "simsun";
+    font-size: 22px;
+}
+.arrow .arrow-left{
+    float: left;
+}
+.arrow .arrow-right {
+    float: right;
+}
+.shop {
+    z-index: 2;
+    position: relative;
+}
+.shop-left ul {
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    bottom: 8px;
+    color: #ffffff;
+    line-height: 18px;
+    text-align: center;
+}
+.shop-left li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    margin-right: 4px;
+}
+.shop-left li.current {
+    background-color:#B61B1F;
+}
+.shop .shop-right .shop-r-t {
+    width: 248px;
+    height: 372px;
+    border: 1px solid #E4E4E4;
+}
+.shop .shop-right .shop-r-b {
+    height: 75px;
+    margin-top: 5px;
+}
+.shop-right .shop-r-t h2 {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dashed #E4E4E4;
+    font-size: 16px;
+    padding: 0 16px 0 15px;
+    font-family: "microsoft yahei";
+}
+.shop-right .shop-r-t h2 a {
+    float: right;
+    font-size: 12px;
+    font-family: consolas;
+}
+.shop-right .shop-r-t ul.news {
+    height: 125px;
+    padding-top: 5px;
+}
+.shop-right .shop-r-t .news li {
+    height: 24px;
+    line-height: 24px;
+    padding-left: 16px;
+}
+.shop-right .shop-r-t li span {
+    font-weight: bold;
+}
+.shop-right .shop-r-t .goods {
+    height: 208px;
+    border-top: 1px solid #E4E4E4;
+    overflow: hidden;
+}
+.shop-right .shop-r-t .goods ul {
+    width: 256px;
+}
+.shop-right .shop-r-t .goods li {
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E4E4E4;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.shop-right .shop-r-t .goods .icon {
+    width: 25px;
+    height: 27px;
+    background: url("../images/icon-shops.png");
+    margin-top: 13px;
+    margin-left: 18px;
+}
+
+.shop-right .shop-r-t .goods .text {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.shop-right .shop-r-t .goods a {
+    display: block;
+    width: 62px;
+    height: 70px;
+    overflow: hidden;
+}
+
+/*每日推荐*/
+.today {
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+.today-left {
+    width: 210px;
+    height: 151px;
+    float: left;
+}
+.today-left a {
+    width: 210px;
+    height: 151px;
+    background: url("../images/homebg.png") -213px bottom;
+    display: block;
+}
+.today-right {
+    width: 1000px;
+    height: 165px;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.today-right:hover .arrow {
+    display: block;
+}
+.today-right ul {
+    width: 1004px;
+}
+.today-right li {
+    float: left;
+    margin-right: 1px;
+}
+
+/*大背景*/
+.bg {
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    z-index: 1;
+}
+.bg a {
+    display: block;
+    width: 100%;
+    height: 640px;
+    background: url("../images/bg.png") top center;
+}

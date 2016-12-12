@@ -1,0 +1,483 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    color: #666;
+    background: #fff;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东主色调*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心*/
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/*css初始化完成*/
+
+/*通栏*/
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+}
+.shortcut-left{
+    padding: 0 27px 0 10px;
+    position: relative;
+}
+.shortcut-left .address {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #DDDDDD;
+    display: none;
+    top: 30px;
+    left: -1px;
+}
+.shortcut-left .address .space {
+    width: 95px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -2px;
+}
+.shortcut-left:hover {
+    background-color: #fff;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    padding: 0 26px 0 9px;
+}
+.shortcut-left:hover .address {
+    display: block;
+}
+.icon-sj {
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    overflow: hidden;
+    /*background-color: blue;*/
+    top: 12px;
+    right: 10px;
+}
+.icon-sj s {
+    position: absolute;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-family: consolas;
+}
+.shortcut-right li {
+    float: left;
+    padding: 0 11px 0 10px;
+}
+.shortcut-right li.line {
+    padding: 0;
+    border-left: 1px solid #DDDDDD;
+    height: 12px;
+    margin-top: 9px;
+}
+.shortcut-right li.dorpdown {
+    padding-right: 29px;
+}
+.shortcut-right li.phone {
+    padding-left: 27px;
+}
+.shortcut-right li.phone span {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: url("../images/jd2015img.png");
+    top: 5px;
+    left: 9px;
+}
+
+/*baner*/
+.banner {
+    background-color: #1879ec;
+}
+.close {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: url("../images/close.png");
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.close:hover {
+    background-position: 0 -19px;
+}
+
+/*搜索栏*/
+.searchBar{
+    padding-top: 25px;
+    height: 75px;
+}
+.searchBar .logo {
+    width: 270px;
+    height: 60px;
+    background: url("../images/logo.png");
+}
+.searchBar .logo a {
+    text-indent: -2000em;
+    width: 270px;
+    height: 60px;
+    display: block;
+}
+.searchBar .search {
+    width: 538px;
+    height: 36px;
+    margin-left: 92px;
+}
+.searchBar .search input {
+    height: 32px;
+    border: 2px solid #B61D1D;
+    border-right: 0 none;
+    width: 450px;
+    float: left;
+    padding-left: 4px;
+    color: #7A6666;
+}
+.searchBar .search button {
+    height: 36px;
+    width: 82px;
+    background-color: #B61D1D;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "microsoft yahei";
+}
+.searchBar .cart {
+    width: 139px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #DFDFDF;
+    margin-left: 104px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+.searchBar .cart .icon-cart {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    background: url("../images/jd2015img.png") 0 -58px;
+    top: 9px;
+    left: 18px;
+}
+.searchBar .cart .cart-count {
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    line-height: 14px;
+    background-color: #C81623;
+    top: -4px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    color: #ffffff;
+    text-align: center;
+    right: 19px;
+}
+.searchBar .cart .cart-right {
+    position: absolute;
+    right: 11px;
+    font-family: consolas;
+}
+.searchBar .cart a {
+    padding-left: 43px;
+}
+.searchBar .hot {
+    margin-left: 92px;
+    height: 28px;
+    line-height: 28px;
+}
+.searchBar .hot a {
+    margin-right: 11px;
+}
+
+/*nav*/
+.nav {
+    border-bottom: 2px solid #B1191A;
+    height: 44px;
+}
+.nav-left {
+    width: 210px;
+    height: 44px;
+    background-color: #B1191A;
+    float: left;
+    position: relative;
+    z-index: 3;
+}
+.nav-left .nav-l-t {
+    width: 210px;
+    height: 44px;
+}
+.nav-left .nav-l-t a {
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    display: block;
+    color: #ffffff;
+    font-family: "microsoft yahei";
+    font-size: 15px;
+    padding-left: 10px;
+}
+.nav-left .nav-l-b {
+    width: 209px;
+    height: 466px;
+    border-left: 1px solid #B1191A;
+    background-color: #C81623;
+    margin-top: 2px;
+}
+.nav-left .nav-l-b li {
+    height: 31px;
+    line-height: 31px;
+    padding: 0 13px 0 10px;
+}
+.nav-left .nav-l-b li:hover {
+    background-color: #fff;
+}
+.nav-left .nav-l-b li:hover a {
+    color: #C81623;
+}
+.nav-left .nav-l-b li a {
+    color: #ffffff;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+}
+.nav-left .nav-l-b li span {
+    float: right;
+    color: #ffffff;
+    font-family: consolas;
+}
+.nav-right {
+    float: left;
+}
+.nav-right li {
+    float: left;
+}
+.nav-right li a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+}
+
+/*slogan*/
+.slogan {
+    background-color: #F5F5F5;
+    position: relative;
+    padding: 20px 0;
+    height: 54px;
+}
+.slogan span {
+    width: 220px;
+    height: 54px;
+    position: absolute;
+    left: 50%;
+    background: yellow;
+}
+.slogan .slogan1 {
+    margin-left: -600px;
+    background-image: url("../images/slogan1.png");
+}
+.slogan .slogan2 {
+    margin-left: -300px;
+    background-image: url("../images/slogan2.png");
+}
+.slogan .slogan3 {
+    background-image: url("../images/slogan3.png");
+}
+.slogan .slogan4 {
+    margin-left: 300px;
+    background-image: url("../images/slogan4.png");
+}
+
+.service {
+    padding-top: 15px;
+
+}
+.service dl {
+    float: left;
+    width: 199px;
+}
+.service dl.last {
+    width: 164px;
+}
+.service dt {
+    line-height: 35px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+}
+.service dd {
+    height: 20px;
+    line-height: 20px;
+}
+.service .coverage {
+    float: left;
+    width: 190px;
+    height: 168px;
+    background: url("../images/map.png") left bottom;
+    padding-left: 20px;
+}
+.service .coverage h3 {
+    line-height: 35px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+}
+.service .coverage p {
+    line-height: 18px;
+    /*height: 54px;*/
+}
+.service .coverage p.last {
+    text-align: right;
+}
+/*网站信息*/
+.info {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 19px;
+}
+.info .links {
+    text-align: center;
+    line-height: 58px;
+    height: 47px;
+}
+.info .links a {
+    margin: 0 12px 0 11px;
+
+}
+.info .permission {
+    text-align: center;
+    line-height: 20px;
+}
+.info .jd-money {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.info .authentication {
+    padding-top: 9px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+.info .authentication a {
+    margin-right: 13px;
+}
+
